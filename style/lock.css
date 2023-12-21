@@ -1,0 +1,52 @@
+html,body
+{
+    background-color: black;
+}
+
+#LockBG
+{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    flex-direction: column;
+}
+
+#LockTime
+{
+    font-size: 500%;
+}
+
+#GreetingText
+{
+    font-size: 300%;
+}
+
+#FTBlack
+{
+    position: fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background-color: black;
+    z-index: 10;
+    opacity:0;
+}
+
+@keyframes FTBlack {
+ 0%
+ {
+    opacity: 0;
+ }   
+ 100%
+ {
+    opacity: 1;
+ }
+}

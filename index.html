@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SpookettiOS</title>
+    <link rel="stylesheet" href="style/init.css">
+    <link rel="stylesheet" href="style/taskbar.css">
+    <link rel="stylesheet" href="style/OSBody.css">
+    <link rel="icon" href="assets/img/icon.jpg">
+</head>
+
+<body>
+    <div id="mouseResolve"></div><!--not a gui-->
+    <div id="FFBlack">
+
+    </div>
+    <div id="OperatingBody">
+      <!--view application.js for how an application should be formatted-->
+        <div id="Desktop">
+            <div class="DesktopObject" ondblclick="createApp('assets/img/pdeck.png','Peardeck',true,'https://joinpd.com')">
+                <img src="assets/img/pdeck.png" class="DesktopIcon">
+                <br>
+                <span>Peardeck</span>
+            </div>
+            <div class="DesktopObject" ondblclick="createApp('assets/img/terminal.png','Terminal',false,null)">
+                <img src="assets/img/terminal.png" class="DesktopIcon">
+                <br>
+                <span>Terminal</span>
+            </div>
+            <div class="DesktopObject" ondblclick="createApp('assets/img/Phoenix.png','Phoenix',true,'https://spooketti.github.io/Phoenix')">
+                <img src="assets/img/Phoenix.png" class="DesktopIcon">
+                <br>
+                <span>Phoenix</span>
+            </div>
+            <div class="DesktopObject" ondblclick="alert('a')">
+                <img src="assets/img/calculator.png" class="DesktopIcon">
+                <br>
+                <span>Calculator</span>
+            </div>
+        </div>
+    </div>
+    <footer id="Taskbar" class="taskbarGradient">
+        <img src="assets/img/icon.jpg" id="TBStart">
+
+        <div id="TBBattery">
+            <span id="TBChargeStatus"></span>
+            <div id="TBBatteryOutline">
+                <div id="TBBatteryValue">
+
+                </div>
+            </div>
+            <div id="TBBatteryExtra"></div>
+            <span id="TBBatteryLiteral">50%</span>
+        </div>
+        <div id="TBCalendar">
+            <span id="TBTime">Loading</span>
+            <br>
+            <span id="TBDate">Loading</span>
+        </div>
+    </footer>
+    <script src="src/init.js"></script>
+    <script src="src/taskbar.js"></script>
+    <script src="src/application.js"></script>
+    <script src="src/keyboardCommands.js"></script>
+</body>
+
+</html>

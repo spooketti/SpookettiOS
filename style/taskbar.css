@@ -1,0 +1,109 @@
+#Taskbar
+{
+    width:100%;
+    position: fixed;
+    left:0;
+    bottom:0;
+    height:8%;
+    background-color: black;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    border-top: solid rgb(114, 111, 111) 1px;
+}
+
+#Taskbar div
+{
+    transition: all .25s;
+}
+
+#Taskbar div:hover:not(#TBBatteryValue)
+{
+    background-color: rgb(47, 47, 47);
+}
+
+#TBCalendar
+{
+    width:fit-content;
+    text-align: right;
+}
+
+#TBBattery
+{
+    width:5%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#TBChargeStatus
+{
+    position: relative;
+    left:4%;
+    top:-18%;
+    font-size: large;
+}
+
+#TBBatteryOutline
+{
+    width:40%;
+    height:25%;
+    border: 1px white solid;
+    border-radius: 13% 13%;
+    overflow: hidden;
+}
+
+#TBBatteryValue
+{
+    height:100%;
+    width:100%;
+    background-color: white;
+}
+
+#TBBatteryExtra
+{
+    height:7%;
+    background-color: white;
+    width:3px;
+}
+
+#TBStart
+{
+    height:80%;
+    width:auto;
+    position: absolute;
+    left:0;
+}
+
+.taskbarGradient {
+    background: linear-gradient(180deg, #000000, #383838);
+    background-size: 400% 400%;
+
+    -webkit-animation: TaskbarGradient 59s ease infinite;
+    -moz-animation: TaskbarGradient 59s ease infinite;
+    -o-animation: TaskbarGradient 59s ease infinite;
+    animation: TaskbarGradient 59s ease infinite;
+}
+
+@-webkit-keyframes TaskbarGradient {
+    0%{background-position:52% 0%}
+    50%{background-position:49% 100%}
+    100%{background-position:52% 0%}
+}
+@-moz-keyframes TaskbarGradient {
+    0%{background-position:52% 0%}
+    50%{background-position:49% 100%}
+    100%{background-position:52% 0%}
+}
+@-o-keyframes TaskbarGradient {
+    0%{background-position:52% 0%}
+    50%{background-position:49% 100%}
+    100%{background-position:52% 0%}
+}
+@keyframes TaskbarGradient {
+    0%{background-position:52% 0%}
+    50%{background-position:49% 100%}
+    100%{background-position:52% 0%}
+}
