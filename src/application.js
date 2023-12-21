@@ -1,4 +1,5 @@
 a = null
+let currentZ = 0
 
 let isWindowedDict = {
     true:"口", //
@@ -101,6 +102,7 @@ function createApp(appIconSrc,appNameStr,isIFrameBody,iFrameSrc)
         let applicationDiv = document.createElement("div")
         applicationDiv.className = "Application"
         applicationDiv.dataset.window = "false"
+        applicationDiv.onclick=function(){currentZ++;applicationDiv.style.zIndex = currentZ}
         operatingBody.insertBefore(applicationDiv,operatingBody.firstChild)
         let appNavbar = document.createElement("div")
         appNavbar.className = "ApplicationNavbar"
